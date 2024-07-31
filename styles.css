@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+canvas {
+    border: 1px solid #000;
+    margin-top: 20px;
+    background-image: url('front.png'); /* Actualiza la ruta a tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el canvas */
+}
+
+#reservation-form {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea, select {
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo adicional para etiquetas de campos de fecha y hora */
+input[type="datetime-local"] {
+    font-size: 16px;
+}
+
+input[type="datetime-local"]::-webkit-datetime-edit {
+    text-align: center;
+}
